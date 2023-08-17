@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border box ;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.container{
+    background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) ,url('/css/fond.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+nav{
+padding:3% 7% ;
+display: flex;
+justify-content:space-between;
+padding-bottom: 20px;
+
+}
+div.links{
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.logo{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.logo span{
+    color: orange;
+}
+nav ul {
+display: flex;
+list-style: none;
+margin: auto;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 1s;
+    
+}
+.social a{
+    margin: 0 10px;
+}
+
+.container section {
+    padding:3% 7% ;
+display: flex;
+flex-direction: column;
+padding-bottom: 20px;
+}
+nav ul li a:hover{
+    color: orange;
+    text-decoration: underline;
+    transition: 1s;
+
+}
+nav ul li a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: orange;
+}
+nav ul li a:hover ::after{
+    width: 100%;
+    transition: 0.5s;
+}
+.social a i{
+    transition: 1s;
+}
+.social a i:hover{
+    color: orange;
+}
+.main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.main h2{
+    font-size: 72px;
+    text-transform: uppercase;
+}
+.main h1{
+    font-size: 100px;
+    color: orange;
+    text-transform: uppercase;
+
+}
+.button {
+    text-decoration: none;
+    border: 1px solid orange;
+    padding: 15px 35px;
+    margin-top: 45px;
+    transition: 1s;
+
+}
+.button:hover{
+background-color: orange;
+}
+/*@media (max-width:900px){
+    .social{
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 40px;
+        background-color: #000;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid rgb(40, 40, 40);}*/
+
+.main h2{
+    font-size: 60px;
+}
+.main h1{
+    font-size: 80px;
+}
