@@ -1,29 +1,36 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+* {
     padding: 0;
     margin: 0;
-    box-sizing: border box ;
+    box-sizing: border-box;
     color: #fff;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-
-
-.container{
-    background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) ,url('/css/fond.jpg');
+.container {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./fond.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 100% ;
+    background-size: 100% 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    justify-content: center;
 }
-nav{
-padding:3% 7% ;
-display: flex;
-justify-content:space-between;
-padding-bottom: 20px;
 
+.activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 200px;
 }
-div.links{
+nav {
+    padding:3% 7% ;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+div .links{
 flex: 1;
 display: flex;
 align-items: center;
@@ -56,10 +63,11 @@ nav ul li a{
 }
 
 .container section {
-    padding:3% 7% ;
+padding: 3% 7% ;
 display: flex;
 flex-direction: column;
 padding-bottom: 20px;
+justify-content:end;
 }
 nav ul li a:hover{
     color: orange;
@@ -113,8 +121,9 @@ nav ul li a:hover ::after{
 .button:hover{
 background-color: orange;
 }
-/*@media (max-width:900px){
-    .social{
+
+@media screen and (max-width: 900px) {
+    .social {
         position: fixed;
         top: 0;
         right: 0;
@@ -125,11 +134,69 @@ background-color: orange;
         background-color: #000;
         justify-content: center;
         align-items: center;
-        border-left: 1px solid rgb(40, 40, 40);}*/
+        border-left: 1px solid rgb(40, 40, 40);
+    }
 
 .main h2{
     font-size: 60px;
 }
 .main h1{
     font-size: 80px;
+}
+}
+.coaches {
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    width: 100vw;
+}
+
+
+.card {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.card p {
+    font-family: "poppins";
+    width:900px;
+}
+
+.card h1 {
+    color: orange;
+}
+
+
+
+.card img {
+    width : 300px;
+    height : 300px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+ .coaches .men {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.coaches .women {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px ;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.activities {
+    padding-left:150px;
+    margin-bottom: 150px;
 }
