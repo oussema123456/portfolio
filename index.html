@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – Oussema Ouertani</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0d1117;
+            color: #e6edf3;
+            font-family: "Segoe UI", sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            color: #58a6ff;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #8b949e;
+            font-size: 1.1rem;
+        }
+
+        .card {
+            background: #161b22;
+            padding: 25px;
+            margin: 20px auto;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.4);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(56,139,253,0.4);
+        }
+
+        h2 {
+            color: #58a6ff;
+            border-left: 4px solid #58a6ff;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background: #21262d;
+            padding: 10px 15px;
+            border-radius: 20px;
+            color: #c9d1d9;
+            border: 1px solid #30363d;
+            transition: 0.3s ease;
+        }
+
+        .tag:hover {
+            background: #58a6ff;
+            color: black;
+            border-color: #58a6ff;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #777;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Portfolio – Oussema Ouertani</h1>
+    <p>Étudiant en Systèmes Embarqués – ISET Rades</p>
+</header>
+
+<!-- PROFIL -->
+<div class="card">
+    <h2>Profil</h2>
+    <p><strong>Nom :</strong> Oussema Ouertani</p>
+    <p><strong>Spécialité :</strong> Systèmes embarqués & technologies mobiles</p>
+    <p><strong>Description :</strong> Étudiant passionné par les microcontrôleurs, systèmes embarqués et projets techniques innovants.</p>
+</div>
+
+<!-- ECOLE -->
+<div class="card">
+    <h2>Mon École – ISET Rades</h2>
+    <p>L’Institut Supérieur des Études Technologiques de Rades offre une formation solide en systèmes embarqués, développement, électronique et informatique.</p>
+</div>
+
+<!-- INTERETS -->
+<div class="card">
+    <h2>Centres d'intérêt</h2>
+
+    <h3>🏋️‍♂️ Sports</h3>
+    <div class="tag-container">
+        <div class="tag">Football</div>
+        <div class="tag">Musculation</div>
+        <div class="tag">Basketball</div>
+        <div class="tag">Natation</div>
+    </div>
+
+    <h3>Musique</h3>
+    <div class="tag-container">
+        <div class="tag">Jouer oud</div>
+        <div class="tag">chanter</div>
+        <div class="tag">musique Classqie</div>
+        <div class="tag">Oum kalthoum</div>
+    </div>
+
+    <h3>💪 Fitness</h3>
+    <div class="tag-container">
+        <div class="tag">Musculation</div>
+        <div class="tag">Cardio</div>
+        <div class="tag">CrossFit</div>
+        <div class="tag">Nutrition sportive</div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 – Portfolio Oussema Ouertani – ISET Rades</p>
+</footer>
+
+</body>
+</html>
